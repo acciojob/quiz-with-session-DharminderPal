@@ -49,12 +49,13 @@ function renderQuestions() {
       
       // If user previously selected this answer, mark it as checked
       if (userAnswers[index] === choice) {
-        choiceElement.checked = true;
+        choiceElement.checked = true; // Mark the radio button as checked
       }
 
+      // Save the selected choice to sessionStorage
       choiceElement.addEventListener("change", () => {
         userAnswers[index] = choice;
-        sessionStorage.setItem("progress", JSON.stringify(userAnswers)); // Save the progress
+        sessionStorage.setItem("progress", JSON.stringify(userAnswers)); // Save progress in session storage
       });
 
       const choiceText = document.createTextNode(choice);
