@@ -18,6 +18,37 @@ const questions = [
             d: "6"
         },
         correct: "b"
+    },
+    // Add more questions to reach a total of 5
+    {
+        question: "What is the largest ocean on Earth?",
+        answers: {
+            a: "Atlantic",
+            b: "Indian",
+            c: "Arctic",
+            d: "Pacific"
+        },
+        correct: "d"
+    },
+    {
+        question: "What is the smallest prime number?",
+        answers: {
+            a: "0",
+            b: "1",
+            c: "2",
+            d: "3"
+        },
+        correct: "c"
+    },
+    {
+        question: "What is the chemical symbol for water?",
+        answers: {
+            a: "H2O",
+            b: "O2",
+            c: "CO2",
+            d: "NaCl"
+        },
+        correct: "a"
     }
 ];
 
