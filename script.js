@@ -46,7 +46,7 @@ function renderQuestions() {
       choiceElement.setAttribute("type", "radio");
       choiceElement.setAttribute("name", `question-${index}`);
       choiceElement.setAttribute("value", choice);
-      
+
       // If user previously selected this answer, mark it as checked
       if (userAnswers[index] === choice) {
         choiceElement.checked = true; // Mark the radio button as checked
