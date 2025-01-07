@@ -72,7 +72,10 @@ function calculateScore() {
   let score = 0;
 
   questions.forEach((question, index) => {
-    if (userAnswers[index] === question.answer) {
+    // Find the selected radio button for this question
+    const selectedRadio = document.querySelector(`input[name="question-${index}"]:checked`);
+    
+    if (selectedRadio && selectedRadio.value === question.answer) {
       score++;
     }
   });
