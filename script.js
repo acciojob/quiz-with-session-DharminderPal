@@ -9,15 +9,15 @@ const questions = [
         },
         correct: "c"
     },
-    {
-        question: "What is 2 + 2?",
+     {
+        question: "What is the highest mountain in the world?",
         answers: {
-            a: "3",
-            b: "4",
-            c: "5",
-            d: "6"
+            a: "K2",
+            b: "Kangchenjunga",
+            c: "Mount Everest",
+            d: "Lhotse"
         },
-        correct: "b"
+        correct: "c"
     },
     // Add more questions to reach a total of 5
     {
@@ -55,7 +55,6 @@ const questions = [
 const questionsContainer = document.getElementById('questions');
 const submitButton = document.getElementById('submit');
 const scoreContainer = document.getElementById('score');
-
 function loadQuestions() {
     questions.forEach((currentQuestion, questionIndex) => {
         const questionElement = document.createElement('div');
